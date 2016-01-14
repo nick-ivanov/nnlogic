@@ -13,3 +13,26 @@
 #
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+from tkinter import Tk, Label, Button
+
+class NNLogicGUI:
+    def __init__(self, master):
+        self.master = master
+        master.title("A simple GUI")
+
+        self.label = Label(master, text="NNLogic GUI")
+        self.label.pack()
+
+        self.greet_button = Button(master, text="Test", command=self.greet)
+        self.greet_button.pack()
+
+        self.close_button = Button(master, text="Cancel", command=master.quit)
+        self.close_button.pack()
+
+    def greet(self):
+        print("Welcome to NNLogic GUI!")
+
+root = Tk()
+my_gui = NNLogicGUI(root)
+root.mainloop()
