@@ -19,7 +19,9 @@ from tkinter import Tk, Label, Button
 class NNLogicGUI:
     def __init__(self, master):
         self.master = master
-        master.title("A simple GUI")
+        master.title("NNLogic GUI")
+
+        
 
         self.label = Label(master, text="NNLogic GUI")
         self.label.pack()
