@@ -25,6 +25,10 @@ class NNLogicGUI:
         T.pack()
         T.insert(END, "Line1\nLine2\n")
 
+        T1 = Text(root, height=2, width=30)
+        T1.pack()
+        T1.insert(END, "AnoterLine1\nAnoterLine2\n")
+
         self.label = Label(master, text="NNLogic GUI")
         self.label.pack()
 
