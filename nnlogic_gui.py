@@ -32,10 +32,10 @@ class NNLogicGUI:
         self.label = Label(master, text="NNLogic GUI")
         self.label.pack()
 
-        self.greet_button = Button(master, text="Test", command=self.greet)
+        self.greet_button = Button(master, text="Process", command=self.greet)
         self.greet_button.pack()
 
-        self.close_button = Button(master, text="Cancel", command=master.quit)
+        self.close_button = Button(master, text="Close", command=master.quit)
         self.close_button.pack()
 
     def greet(self):
