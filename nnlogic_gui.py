@@ -21,9 +21,11 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        T = Text(root, height=2, width=30)
+        T = Text(root, height=2, width=30, bg="green")
         T.pack()
         T.insert(END, "Line1\nLine2\n")
+        
+
 
         T1 = Text(root, height=2, width=30)
         T1.pack()
