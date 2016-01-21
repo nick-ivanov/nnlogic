@@ -24,10 +24,8 @@ class NNLogicGUI:
         T = Text(root, height=2, width=30, bg="green")
         T.pack()
         T.insert(END, "Line1\nLine2\n")
-        
 
-
-        T1 = Text(root, height=2, width=30)
+        T1 = Text(root, height=2, width=30, bg="red")
         T1.pack()
         T1.insert(END, "AnoterLine1\nAnoterLine2\n")
 
