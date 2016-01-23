@@ -21,11 +21,11 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        T = Text(root, height=2, width=30, bg="green")
+        T = Text(root, height=2, width=100, bg="green")
         T.pack()
         T.insert(END, "Line1\nLine2\n")
 
-        T1 = Text(root, height=2, width=30, bg="red")
+        T1 = Text(root, height=2, width=100, bg="red")
         T1.pack()
         T1.insert(END, "AnoterLine1\nAnoterLine2\n")
 
