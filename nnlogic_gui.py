@@ -21,13 +21,14 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        frame = Frame(master, bd=2, relief=SUNKEN)
+        frame = Frame(master)
 
         scrollbar = Scrollbar(frame)
-        scrollbar.pack(side=RIGHT, fill=Y)
+        scrollbar.grid(row=0, column=1)
 
         text = Text(frame, bg="blue", wrap=WORD, yscrollcommand=scrollbar.set)
-        text.pack()
+        text.grid(row=0, column=0)
+
 
 
 
