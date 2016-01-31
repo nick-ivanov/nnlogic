@@ -21,18 +21,15 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-
         scrollbar = Scrollbar(master)
-        scrollbar.grid(row=0, column=0)
+        scrollbar.grid(row=0, column=1)
 
         text = Text(master, bg="blue", wrap=WORD, yscrollcommand=scrollbar.set)
-        text.grid(row=0, column=1)
+        text.grid(row=0, column=0)
 
-
-
+        scrollbar.config(command=text.yview)
 
         text.insert(END, "Line1\nLine2\nLine3")
-        scrollbar.config(command=text.yview)
 
         T = Text(root, height=2, width=100, bg="green")
         T.grid(row=1, column=0)
