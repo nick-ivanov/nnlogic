@@ -16,6 +16,28 @@
 
 from tkinter import *
 
+
+class ScrollText:
+    def __init__(self, root):
+        frame = Frame(root)
+        frame.pack()
+        self.textPad(frame)
+        return
+
+    def textPad(self, frame):
+        textPad = Frame(frame)
+        self.text = Text(textPad, height=50, width=90)
+
+        scroll = Scrollbar(textPad)
+        self.text.configure(yscrollcommand=scroll.set)
+
+        self.text.pack(side=LEFT)
+        scroll.pack(side=RIGHT, fill=Y)
+        textPad.pack(side=TOP)
+        return
+
+
+
 class NNLogicGUI:
     def __init__(self, master):
         self.master = master
