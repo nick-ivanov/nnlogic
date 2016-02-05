@@ -15,6 +15,7 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 from tkinter import *
+from tkinter.scrolledtext import *
 
 
 class ScrollText:
@@ -43,25 +44,26 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        s = Scrollbar(root)
-        T = Text(root)
+        # s = Scrollbar(root)
+        # T = Text(root)
+        #
+        # T.focus_set()
+        # s.pack(side=RIGHT, fill=Y)
+        # T.pack(side=LEFT, fill=Y)
+        # s.config(command=T.yview)
+        # T.config(yscrollcommand=s.set)
+        #
+        # for i in range(40):
+        #     T.insert(END, "This is line %d\n" % i)
 
-        T.focus_set()
-        s.pack(side=RIGHT, fill=Y)
-        T.pack(side=LEFT, fill=Y)
-        s.config(command=T.yview)
-        T.config(yscrollcommand=s.set)
+        T2 = ScrolledText(root, height=2, width=100, bg="green")
+        T2.pack()
+        T2.insert(END, "Line1\nLine2\nLine3")
 
-        for i in range(40):
-            T.insert(END, "This is line %d\n" % i)
-
-        #T2 = Text(root, height=2, width=100, bg="green")
-        #T2.pack(side=BOTTOM)
-        #T2.insert(END, "Line1\nLine2\nLine3")
-
-        # T1 = Text(root, height=2, width=100, bg="red")
-        # T1.grid(row=2, column=0)
-        # T1.insert(END, "AnoterLine1\nAnoterLine2\n")
+        T1 = Text(root, height=2, width=100, bg="red")
+        T1.pack()
+        T1.insert(END, "AnoterLine1\nAnoterLine2\n")
+        
         #
         # self.label = Label(master, text="NNLogic GUI")
         # self.label.grid(row=3, column=0)
