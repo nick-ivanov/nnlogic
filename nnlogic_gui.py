@@ -43,14 +43,22 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        text = ScrollText(master, width=50, height=50)
-        text.pack()
+        s = Scrollbar(root)
+        T = Text(root)
 
+        T.focus_set()
+        s.pack(side=RIGHT, fill=Y)
+        T.pack(side=LEFT, fill=Y)
+        s.config(command=T.yview)
+        T.config(yscrollcommand=s.set)
 
-        # T = Text(root, height=2, width=100, bg="green")
-        # T.grid(row=1, column=0)
-        # T.insert(END, "Line1\nLine2\nLine3")
-        #
+        for i in range(40):
+            T.insert(END, "This is line %d\n" % i)
+
+        #T2 = Text(root, height=2, width=100, bg="green")
+        #T2.pack(side=BOTTOM)
+        #T2.insert(END, "Line1\nLine2\nLine3")
+
         # T1 = Text(root, height=2, width=100, bg="red")
         # T1.grid(row=2, column=0)
         # T1.insert(END, "AnoterLine1\nAnoterLine2\n")
