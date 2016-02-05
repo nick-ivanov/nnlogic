@@ -56,14 +56,16 @@ class NNLogicGUI:
         # for i in range(40):
         #     T.insert(END, "This is line %d\n" % i)
 
-        T2 = ScrolledText(root, height=2, width=100, bg="green")
+
+
+        T2 = ScrolledText(root, height=20, width=100, bg="blue")
         T2.pack()
         T2.insert(END, "Line1\nLine2\nLine3")
 
-        T1 = Text(root, height=2, width=100, bg="red")
+        T1 = ScrolledText(root, height=3, width=100, bg="red")
         T1.pack()
         T1.insert(END, "AnoterLine1\nAnoterLine2\n")
-        
+
         #
         # self.label = Label(master, text="NNLogic GUI")
         # self.label.grid(row=3, column=0)
