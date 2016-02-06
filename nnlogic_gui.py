@@ -58,11 +58,11 @@ class NNLogicGUI:
 
 
 
-        T2 = ScrolledText(root, height=20, width=100, bg="blue")
+        T2 = ScrolledText(root, height=20, width=100, bg="#88b898")
         T2.pack()
         T2.insert(END, "Line1\nLine2\nLine3")
 
-        T1 = ScrolledText(root, height=3, width=100, bg="red")
+        T1 = ScrolledText(root, height=3, width=100, bg="#aaaaff")
         T1.pack()
         T1.insert(END, "AnoterLine1\nAnoterLine2\n")
 
