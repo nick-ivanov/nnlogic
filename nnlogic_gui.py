@@ -56,8 +56,8 @@ class NNLogicGUI:
         # for i in range(40):
         #     T.insert(END, "This is line %d\n" % i)
 
-        label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
-        label.pack()
+        self.label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
+        self.label.pack()
 
         T2 = ScrolledText(root, height=20, width=100, bg="#88b898")
         T2.pack()
