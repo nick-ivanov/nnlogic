@@ -62,6 +62,7 @@ class NNLogicGUI:
         T2 = ScrolledText(root, height=20, width=100, bg="#88b898")
         T2.pack()
         T2.insert(END, "Line1\nLine2\nLine3")
+        T2.config(state=DISABLED)
 
         T1 = ScrolledText(root, height=3, width=100, bg="#aaaaff")
         T1.pack()
