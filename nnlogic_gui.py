@@ -59,11 +59,11 @@ class NNLogicGUI:
         self.label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.label.pack()
 
-        T2 = ScrolledText(root, height=20, width=100, bg="#88b898", state=DISABLED)
-        T2.pack()
-        T2.config(state=NORMAL)
-        T2.insert(END, "Line1\nLine2\nLine3")
-        T2.config(state=DISABLED)
+        output_text = ScrolledText(root, height=20, width=100, bg="#88b898", state=DISABLED)
+        output_text.pack()
+        output_text.config(state=NORMAL)
+        output_text.insert(END, "Line1\nLine2\nLine3")
+        output_text.config(state=DISABLED)
 
 
         T1 = ScrolledText(root, height=3, width=100, bg="#aaaaff")
