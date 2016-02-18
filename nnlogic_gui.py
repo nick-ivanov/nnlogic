@@ -22,18 +22,6 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        # s = Scrollbar(root)
-        # T = Text(root)
-        #
-        # T.focus_set()
-        # s.pack(side=RIGHT, fill=Y)
-        # T.pack(side=LEFT, fill=Y)
-        # s.config(command=T.yview)
-        # T.config(yscrollcommand=s.set)
-        #
-        # for i in range(40):
-        #     T.insert(END, "This is line %d\n" % i)
-
         self.top_label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.top_label.pack()
 
