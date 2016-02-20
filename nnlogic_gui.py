@@ -39,8 +39,8 @@ class NNLogicGUI:
         # self.label = Label(master, text="NNLogic GUI")
         # self.label.grid(row=3, column=0)
         #
-        # self.greet_button = Button(master, text="Process", command=self.greet)
-        # self.greet_button.grid(row=4, column=0)
+        self.greet_button = Button(master, text="Process", command=self.greet)
+        self.greet_button.grid(row=4, column=0)
         #
         # self.close_button = Button(master, text="Close", command=master.quit)
         # self.close_button.grid(row=5, column=0)
