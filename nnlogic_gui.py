@@ -47,7 +47,9 @@ class NNLogicGUI:
 
     def greet(self):
         print("Welcome to NNLogic GUI!")
+        self.output_text.config(state=NORMAL)
         self.output_text.delete(0, END)
+        self.output_text.config(state=DISABLED)
         self.output_text.insert(END, "Welcome to NNLogic GUI!")
 
 root = Tk()
