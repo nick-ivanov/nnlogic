@@ -25,11 +25,9 @@ class NNLogicGUI:
         self.top_label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.top_label.pack()
 
-        self.output_text = ScrolledText(root, height=20, width=100, bg="#88b898", state=DISABLED)
+        self.output_text = ScrolledText(root, height=20, width=100, bg="#88b898")
         self.output_text.pack()
-        self.output_text.config(state=NORMAL)
         self.output_text.insert(END, "Line1\nLine2\nLine3")
-        self.output_text.config(state=DISABLED)
 
         input_text = ScrolledText(root, height=3, width=100, bg="#aaaaff")
         input_text.pack()
@@ -47,10 +45,7 @@ class NNLogicGUI:
 
     def greet(self):
         print("Welcome to NNLogic GUI!")
-        self.output_text.config(state=NORMAL)
-        self.output_text.delete(0, END)
-        self.output_text.config(state=DISABLED)
-        self.output_text.insert(END, "Welcome to NNLogic GUI!")
+        self.output_text.insert(0, "Welcome to NNLogic GUI!")
 
 root = Tk()
 my_gui = NNLogicGUI(root)
