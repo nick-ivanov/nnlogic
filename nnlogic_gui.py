@@ -45,6 +45,7 @@ class NNLogicGUI:
 
     def greet(self):
         print("Welcome to NNLogic GUI!")
+        self.output_text.delete("1.0", END)
         self.output_text.insert(INSERT, "Welcome to NNLogic GUI!")
         print(END, INSERT)
 
