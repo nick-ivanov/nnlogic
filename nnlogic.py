@@ -71,6 +71,6 @@ def go():
                 return
             cnt = cnt+1
 
-        print (localquery)
+        print(localquery)
 
 go()
