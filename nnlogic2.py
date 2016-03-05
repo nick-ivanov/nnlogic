@@ -41,7 +41,7 @@ def go():
 
     rc = ctx.get_variables()
     if (rc != 0):
-        print ("Error: Too many variables (maximum = 8)")
+        print("Error: Too many variables (maximum = 8)")
         return
 
     nvars = len(ctx.variables)		# Number of variables (bits)
@@ -67,7 +67,7 @@ def go():
             for k in sub_table:
                 localquery = localquery.replace(k[0], k[1])
             if cnt == 100:
-                print ("Error: Syntax error")
+                print("Error: Syntax error")
                 return
             cnt = cnt+1
 
