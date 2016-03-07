@@ -20,7 +20,7 @@ from bindigit import bindigit
 from welcome_message import welcome_message
 
 def go2():
-    """ Main function """
+    """ Workhorse for GUI """
     ctx = Context()
 
     print (welcome_message)
