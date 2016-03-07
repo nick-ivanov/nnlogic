@@ -19,7 +19,7 @@ from sub_table import sub_table
 from bindigit import bindigit
 from welcome_message import welcome_message
 
-def go():
+def go2():
     """ Main function """
     ctx = Context()
 
@@ -73,4 +73,4 @@ def go():
 
         print(localquery)
 
-go()
+go2()
