@@ -19,12 +19,12 @@ from sub_table import sub_table
 from bindigit import bindigit
 from welcome_message import welcome_message
 
-def go2():
+def go2(q):
     """ Workhorse for GUI """
     ctx = Context()
 
     print (welcome_message)
-    ctx.query = input("NNLogic >> ")
+    ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
     ctx.query = ctx.query.upper()
 
@@ -73,4 +73,4 @@ def go2():
 
         print(localquery)
 
-go2()
+go2("A+B")
