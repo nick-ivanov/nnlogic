@@ -17,10 +17,14 @@
 from tkinter import *
 from tkinter.scrolledtext import *
 
+from nnlogic2 import go2
+
 class NNLogicGUI:
     def __init__(self, master):
         self.master = master
         master.title("NNLogic GUI")
+
+        go2("AB")
 
         self.top_label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.top_label.pack()
