@@ -41,13 +41,13 @@ class NNLogicGUI:
         # self.label = Label(master, text="NNLogic GUI")
         # self.label.grid(row=3, column=0)
         #
-        self.greet_button = Button(master, text="Process", command=self.greet)
+        self.greet_button = Button(master, text="Process", command=self.process)
         self.greet_button.pack()
         #
         # self.close_button = Button(master, text="Close", command=master.quit)
         # self.close_button.grid(row=5, column=0)
 
-    def greet(self):
+    def process(self):
         print("Welcome to NNLogic GUI!")
         self.output_text.delete("1.0", END)
         self.output_text.insert(INSERT, "Welcome to NNLogic GUI!")
