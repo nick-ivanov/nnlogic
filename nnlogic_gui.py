@@ -33,9 +33,9 @@ class NNLogicGUI:
         self.output_text.pack()
         self.output_text.insert(END, "Line1\nLine2\nLine3")
 
-        input_text = ScrolledText(root, height=3, width=100, bg="#aaaaff")
-        input_text.pack()
-        input_text.insert(END, "AnoterLine1\nAnoterLine2\n")
+        self.input_text = ScrolledText(root, height=3, width=100, bg="#aaaaff")
+        self.input_text.pack()
+        self.input_text.insert(END, "AnoterLine1\nAnoterLine2\n")
 
         #
         # self.label = Label(master, text="NNLogic GUI")
