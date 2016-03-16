@@ -45,7 +45,7 @@ class NNLogicGUI:
         self.output_text.delete("1.0", END)
         s = self.input_text.get("1.0", END)
         print(s)
-        self.output_text.insert(INSERT, "Welcome to NNLogic GUI!")
+        self.output_text.insert(INSERT, s)
         print(END, INSERT)
 
 root = Tk()
