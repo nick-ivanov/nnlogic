@@ -25,7 +25,7 @@ def go2(q):
 
     ret = ""
 
-    print (welcome_message)
+    ret += welcome_message
     ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
     ctx.query = ctx.query.upper()
