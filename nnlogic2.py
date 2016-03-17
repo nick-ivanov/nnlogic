@@ -72,5 +72,3 @@ def go2(q):
             cnt = cnt+1
 
         print(localquery)
-
-go2("A+B")

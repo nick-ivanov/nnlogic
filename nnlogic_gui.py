@@ -24,8 +24,6 @@ class NNLogicGUI:
         self.master = master
         master.title("NNLogic GUI")
 
-        go2("AB")
-
         self.top_label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.top_label.pack()
 
@@ -46,7 +44,6 @@ class NNLogicGUI:
         s = self.input_text.get("1.0", END)
         print(s)
         self.output_text.insert(INSERT, s)
-        print(END, INSERT)
 
 root = Tk()
 my_gui = NNLogicGUI(root)
