@@ -24,13 +24,14 @@ def go2(q):
     ctx = Context()
 
     ret = ""
-
     ret += welcome_message
+
     ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
     ctx.query = ctx.query.upper()
 
     whitelist = ctx.alphabet + "01()*^+'"
+
     for i in ctx.query:
         passflag = False
         for j in whitelist:
@@ -38,8 +39,7 @@ def go2(q):
                 passflag = True
                 break
         if passflag == False:
-            print("Error: character {} is not allowed.".format(i))
-            return
+            return "Error: character {} is not allowed.".format(i)
 
     rc = ctx.get_variables()
     if (rc != 0):
