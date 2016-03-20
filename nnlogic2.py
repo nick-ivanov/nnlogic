@@ -43,8 +43,7 @@ def go2(q):
 
     rc = ctx.get_variables()
     if (rc != 0):
-        print("Error: Too many variables (maximum = 8)")
-        return
+        return "Error: Too many variables (maximum = 8)"
 
     nvars = len(ctx.variables)		# Number of variables (bits)
     ncomb = 2 ** nvars				# Number of possible combinations
