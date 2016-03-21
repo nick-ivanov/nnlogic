@@ -53,7 +53,7 @@ def go2(q):
         ret += str(i)
         ret += " "
 
-    print()
+    ret += "\n"
 
     for i in range(ncomb):
         localquery = ctx.query
