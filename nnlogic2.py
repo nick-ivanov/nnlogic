@@ -49,7 +49,10 @@ def go2(q):
     ncomb = 2 ** nvars				# Number of possible combinations
 
     for i in ctx.variables:
-        print(i, end=" ")
+        # print(i, end=" ")
+        ret += str(i)
+        ret += " "
+
     print()
 
     for i in range(ncomb):
