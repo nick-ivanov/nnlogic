@@ -66,7 +66,7 @@ def go2(q):
             # print(vv, end=" ")
             ret += str(vv)
             ret += " "
-            cnt = cnt+1
+            cnt = cnt + 1
 
         cnt = 0
         while (localquery != "1" and localquery != "0"):
