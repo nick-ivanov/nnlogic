@@ -63,7 +63,9 @@ def go2(q):
             if varvalue == 1: vv = "1"
             else: vv = "0"
             localquery = localquery.replace(j, vv)
-            print(vv, end=" ")
+            # print(vv, end=" ")
+            ret += str(vv)
+            ret += " "
             cnt = cnt+1
 
         cnt = 0
