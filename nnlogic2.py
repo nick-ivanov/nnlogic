@@ -74,6 +74,6 @@ def go2(q):
                 localquery = localquery.replace(k[0], k[1])
             if cnt == 100:
                 return "Error: Syntax error"
-            cnt = cnt+1
+            cnt = cnt + 1
 
         print(localquery)
