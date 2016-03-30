@@ -28,6 +28,7 @@ def go2(q):
 
     ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
+    ctx.query = ctx.query.replace("\n", "")
     ctx.query = ctx.query.upper()
 
     whitelist = ctx.alphabet + "01()*^+'"
