@@ -77,4 +77,7 @@ def go2(q):
                 return "Error: Syntax error"
             cnt = cnt + 1
 
-        return (ret + localquery)
+        ret += localquery
+        ret += "\n"
+
+    return ret
