@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-welcome_message = """Nickemu v. 0.3 -- A simple logic expression processor
+welcome_message = """Nickemu v. 0.7 -- A simple logic expression processor
 Copyright (C) 2014-2016 Nick Ivanov
 Email: nick@nnbits.org
 Distributed under GNU General Public License v. 3

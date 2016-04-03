@@ -22,7 +22,6 @@ from welcome_message import welcome_message
 def go2(q):
     """ Workhorse for GUI """
     ctx = Context()
-
     ret = ""
     ret += welcome_message
 
@@ -50,7 +49,6 @@ def go2(q):
     ncomb = 2 ** nvars				# Number of possible combinations
 
     for i in ctx.variables:
-        # print(i, end=" ")
         ret += str(i)
         ret += " "
 
@@ -64,7 +62,6 @@ def go2(q):
             if varvalue == 1: vv = "1"
             else: vv = "0"
             localquery = localquery.replace(j, vv)
-            # print(vv, end=" ")
             ret += str(vv)
             ret += " "
             cnt = cnt + 1
