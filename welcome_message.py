@@ -16,7 +16,7 @@
 
 welcome_message = """Nickemu v. 0.7 -- A simple logic expression processor
 Copyright (C) 2014-2016 Nick Ivanov
-Email: nick@nnbits.org
+Email: nnrowan@gmail.com
 Distributed under GNU General Public License v. 3
 The text of the license is in license.txt file or online:
 https://www.gnu.org/licenses/gpl-3.0.html
@@ -27,7 +27,7 @@ An expression can use parentheses and the following elements:
 ' - NOT (used after an operand); * - AND; + - OR;
 ^ - XOR (exclusive OR); ^' - XNOR; *' - NAND; +' - NOR;
 A, B, C, ... Z - one-character variables
-NOTE: NNLogic is case unsensitive
+NOTE: NNLogic is case insensitive
 
 No operand between variables is treated as AND (AB = A*B).
 Maximum number of variables is 8.
