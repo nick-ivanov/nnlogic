@@ -33,7 +33,7 @@ class NNLogicGUI:
 
         self.input_text = ScrolledText(root, height=3, width=100, bg="#aaaaff")
         self.input_text.pack()
-        self.input_text.insert(END, "AnoterLine1\nAnoterLine2\n")
+        #self.input_text.insert(END, "AnoterLine1\nAnoterLine2\n")
 
         self.greet_button = Button(master, text="Process", command=self.process)
         self.greet_button.pack()
