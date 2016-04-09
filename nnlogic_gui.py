@@ -22,9 +22,34 @@ from nnlogic2 import go2
 class NNLogicGUI:
     def __init__(self, master):
         self.master = master
-        master.title("NNLogic GUI")
+        self.master.title("NNLogic GUI")
 
-        self.top_label = Label(master, text="NNLogic ver. 0.7", font=("Courier", 20))
+        self.menubar = Menu(self.master)
+        self.filemenu = Menu(self.menubar, tearoff=0)
+        self.filemenu.add_command(label="New", command=self.hello)
+        self.filemenu.add_command(label="Open", command=self.hello)
+        self.filemenu.add_command(label="Save", command=self.hello)
+        self.filemenu.add_separator()
+        self.filemenu.add_command(label="Exit", command=self.master.quit)
+        self.menubar.add_cascade(label="File", menu=self.filemenu)
+
+        self.helpmenu = Menu(self.menubar, tearoff=0)
+        self.helpmenu.add_command(label="Help Index", command=self.hello)
+        self.helpmenu.add_command(label="About...", command=self.hello)
+        self.menubar.add_cascade(label="Help", menu=self.helpmenu)
+
+        self.editmenu = Menu(self.menubar, tearoff=0)
+        self.editmenu.add_command(label="Cut", command=self.hello)
+        self.editmenu.add_command(label="Copy", command=self.hello)
+        self.editmenu.add_command(label="Past", command=self.hello)
+        self.editmenu.add_command(label="Duplicate Line", command=self.hello)
+        self.editmenu.add_command(label="Toggle Case", command=self.hello)
+        self.menubar.add_cascade(label="Edit", menu=self.editmenu)
+
+        self.master.config(menu=self.menubar)
+
+
+        self.top_label = Label(self.master, text="NNLogic ver. 0.7", font=("Courier", 20))
         self.top_label.pack()
 
         self.output_text = ScrolledText(root, height=30, width=100, bg="#88b898")
@@ -43,6 +68,9 @@ class NNLogicGUI:
         self.output_text.delete("1.0", END)
         s = self.input_text.get("1.0", END)
         self.output_text.insert(INSERT, go2(s))
+
+    def hello(self):
+        print("hello")
 
 root = Tk()
 my_gui = NNLogicGUI(root)

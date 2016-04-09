@@ -4,7 +4,6 @@ from tkinter import *
 def hello():
     print("hello")
 
-
 root = Tk()
 
 menubar = Menu(root)
