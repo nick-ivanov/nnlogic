@@ -11,4 +11,9 @@ NNLogic is written in Python, which means that all you need is the source code a
 
 https://www.python.org/downloads/
 
+When Python 3.x is installed, download and unpack (if zipped or archived) the source code of NNLogic. You can use this link:
+
+https://github.com/nick-ivanov/nnlogic/archive/master.zip
+
 ### Run NNLogic
+
