@@ -21,4 +21,11 @@ In order to run NNLogic, run a terminal, change current directory to the one wit
 * nnlogic.py -- CLI interface of NNLogic;
 * nnlogic_gui.py -- GUI (Tkinter) version of NNLogic.
 
+For example, if you are using Linux, and the directory with NNLogic is `/home/johndoe/programs/nnlogic`, the following commands will run the GUI version of the program:
+
+```
+cd /home/johndoe/programs/nnlogic
+python3 nnlogic_gui.py
+```
+
 
