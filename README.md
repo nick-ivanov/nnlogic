@@ -17,3 +17,8 @@ https://github.com/nick-ivanov/nnlogic/archive/master.zip
 
 ### Run NNLogic
 
+In order to run NNLogic, run a terminal, change current directory to the one with NNLogic source files, and run either of the following two files using python3:
+* nnlogic.py -- CLI interface of NNLogic;
+* nnlogic_gui.py -- GUI (Tkinter) version of NNLogic.
+
+
