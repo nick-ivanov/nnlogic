@@ -28,4 +28,8 @@ cd /home/johndoe/programs/nnlogic
 python3 nnlogic_gui.py
 ```
 
+Or you may want to use a single command:
 
+```
+python3 /home/johndoe/programs/nnlogic/nnlogic_gui.py
+```
