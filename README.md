@@ -38,3 +38,7 @@ python3 /home/johndoe/programs/nnlogic/nnlogic_gui.py
 
 ### Main Window
 
+This is how the main window looks like:
+
+![NNLogic Main Window](https://raw.githubusercontent.com/nick-ivanov/nnlogic/master/screenshots/screenshot1.png)
+
