@@ -42,3 +42,9 @@ This is how the main window looks like:
 
 ![NNLogic Main Window](https://raw.githubusercontent.com/nick-ivanov/nnlogic/master/screenshots/screenshot1.png)
 
+### Processing an Expression
+
+In order to parse an expression and build a truth table for it, just type it in the purple box and click "Process":
+
+![NNLogic Processing an Expression](https://raw.githubusercontent.com/nick-ivanov/nnlogic/master/screenshots/screenshot2.png)
+
