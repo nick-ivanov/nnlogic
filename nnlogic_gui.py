@@ -68,6 +68,10 @@ class NNLogicGUI:
     def hello(self):
         print("hello")
 
+    def clear_input(self):
+        self.input_text.delete("1.0", END)
+
+
 root = Tk()
 my_gui = NNLogicGUI(root)
 root.mainloop()
