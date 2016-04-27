@@ -71,6 +71,8 @@ class NNLogicGUI:
     def clear_input(self):
         self.input_text.delete("1.0", END)
 
+    def clear_output(self):
+        self.output_text.delete("1.0", END)
 
 root = Tk()
 my_gui = NNLogicGUI(root)
