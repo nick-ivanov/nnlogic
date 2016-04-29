@@ -33,11 +33,6 @@ class NNLogicGUI:
         self.filemenu.add_command(label="Exit", command=self.master.quit)
         self.menubar.add_cascade(label="File", menu=self.filemenu)
 
-        self.helpmenu = Menu(self.menubar, tearoff=0)
-        self.helpmenu.add_command(label="Help Index", command=self.hello)
-        self.helpmenu.add_command(label="About...", command=self.hello)
-        self.menubar.add_cascade(label="Help", menu=self.helpmenu)
-
         self.editmenu = Menu(self.menubar, tearoff=0)
         self.editmenu.add_command(label="Cut", command=self.hello)
         self.editmenu.add_command(label="Copy", command=self.hello)
@@ -45,6 +40,11 @@ class NNLogicGUI:
         self.editmenu.add_command(label="Clear Input", command=self.clear_input)
         self.editmenu.add_command(label="Toggle Case", command=self.hello)
         self.menubar.add_cascade(label="Edit", menu=self.editmenu)
+
+        self.helpmenu = Menu(self.menubar, tearoff=0)
+        self.helpmenu.add_command(label="Help Index", command=self.hello)
+        self.helpmenu.add_command(label="About...", command=self.hello)
+        self.menubar.add_cascade(label="Help", menu=self.helpmenu)
 
         self.master.config(menu=self.menubar)
 
