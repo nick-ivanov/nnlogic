@@ -38,6 +38,7 @@ class NNLogicGUI:
         self.editmenu.add_command(label="Copy", command=self.hello)
         self.editmenu.add_command(label="Past", command=self.hello)
         self.editmenu.add_command(label="Clear Input", command=self.clear_input)
+        self.editmenu.add_command(label="Clear Output", command=self.clear_output)
         self.editmenu.add_command(label="Toggle Case", command=self.hello)
         self.menubar.add_cascade(label="Edit", menu=self.editmenu)
 
