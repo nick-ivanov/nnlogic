@@ -74,6 +74,11 @@ class NNLogicGUI:
     def clear_output(self):
         self.output_text.delete("1.0", END)
 
+    def copy(self, event=None):
+        self.clipboard_clear()
+        text = "helloworld"
+        self.clipboard_append(text)
+
 root = Tk()
 my_gui = NNLogicGUI(root)
 root.mainloop()
