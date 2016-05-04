@@ -36,7 +36,7 @@ class NNLogicGUI:
         self.editmenu = Menu(self.menubar, tearoff=0)
         self.editmenu.add_command(label="Cut", command=self.hello)
         self.editmenu.add_command(label="Copy", command=self.copy)
-        self.editmenu.add_command(label="Past", command=self.hello)
+        self.editmenu.add_command(label="Paste", command=self.paste)
         self.editmenu.add_command(label="Clear Input", command=self.clear_input)
         self.editmenu.add_command(label="Clear Output", command=self.clear_output)
         self.menubar.add_cascade(label="Edit", menu=self.editmenu)
@@ -75,9 +75,9 @@ class NNLogicGUI:
         self.output_text.delete("1.0", END)
 
     def copy(self, event=None):
-        self.clipboard_clear()
+        self.master.clipboard_clear()
         text = "helloworld"
-        self.clipboard_append(text)
+        self.master.clipboard_append(text)
 
     def paste(self, event):
         text = self.selection_get(selection='CLIPBOARD')
