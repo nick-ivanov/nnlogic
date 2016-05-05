@@ -79,7 +79,7 @@ class NNLogicGUI:
         text = "helloworld"
         self.master.clipboard_append(text)
 
-    def paste(self, event):
+    def paste(self):
         text = self.selection_get(selection='CLIPBOARD')
         print(text)
 
