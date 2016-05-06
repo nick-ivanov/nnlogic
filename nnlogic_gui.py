@@ -76,7 +76,8 @@ class NNLogicGUI:
 
     def copy(self):
         self.master.clipboard_clear()
-        text = "helloworld"
+        #text = "helloworld"
+        text = self.master.get("sel.first", "sel.last")
         self.master.clipboard_append(text)
 
     def paste(self):
