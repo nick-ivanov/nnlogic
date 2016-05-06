@@ -74,13 +74,13 @@ class NNLogicGUI:
     def clear_output(self):
         self.output_text.delete("1.0", END)
 
-    def copy(self, event=None):
+    def copy(self):
         self.master.clipboard_clear()
         text = "helloworld"
         self.master.clipboard_append(text)
 
     def paste(self):
-        text = self.selection_get(selection='CLIPBOARD')
+        text = self.master.selection_get(selection='CLIPBOARD')
         print(text)
 
 root = Tk()
