@@ -82,7 +82,7 @@ class NNLogicGUI:
     def paste(self):
         text = self.master.selection_get(selection='CLIPBOARD')
 
-        widget = self.focus_get()
+        widget = self.master.focus_get()
         # works for Text and Entry, at least; fails quietly
         widget.tk.call('tk_textPaste', widget._w)
         print(text)
