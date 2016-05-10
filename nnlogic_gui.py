@@ -79,6 +79,16 @@ class NNLogicGUI:
         text = self.master.selection_get()
         self.master.clipboard_append(text)
 
+    def cut(self):
+        widget = self.focus_get()
+        if isinstance(widget, Entry):
+            if widget.selection_present():
+                widget.clipboard_clear()
+                widget.clipboard_append(widget.selection_get())
+                widget.delete(SEL_FIRST, SEL_LAST)
+        else:
+            widget.tk.call('tk_textCut', widget._w)
+
     def paste(self):
         #text = self.master.selection_get(selection='CLIPBOARD')
         widget = self.master.focus_get()
