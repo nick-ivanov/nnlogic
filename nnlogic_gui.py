@@ -34,7 +34,7 @@ class NNLogicGUI:
         self.menubar.add_cascade(label="File", menu=self.filemenu)
 
         self.editmenu = Menu(self.menubar, tearoff=0)
-        self.editmenu.add_command(label="Cut", command=self.hello)
+        self.editmenu.add_command(label="Cut", command=self.cut)
         self.editmenu.add_command(label="Copy", command=self.copy)
         self.editmenu.add_command(label="Paste", command=self.paste)
         self.editmenu.add_command(label="Clear Input", command=self.clear_input)
