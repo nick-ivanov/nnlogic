@@ -80,7 +80,7 @@ class NNLogicGUI:
         self.master.clipboard_append(text)
 
     def cut(self):
-        widget = self.focus_get()
+        widget = self.master.focus_get()
         if isinstance(widget, Entry):
             if widget.selection_present():
                 widget.clipboard_clear()
