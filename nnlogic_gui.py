@@ -90,7 +90,6 @@ class NNLogicGUI:
             widget.tk.call('tk_textCut', widget._w)
 
     def paste(self):
-        #text = self.master.selection_get(selection='CLIPBOARD')
         widget = self.master.focus_get()
         widget.tk.call('tk_textPaste', widget._w)
 
