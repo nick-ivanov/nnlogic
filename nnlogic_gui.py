@@ -16,6 +16,9 @@
 
 from tkinter import *
 from tkinter.scrolledtext import *
+from tkinter.filedialog import askopenfilename
+from tkinter.messagebox import showerror
+
 
 from nnlogic2 import go2
 
@@ -93,6 +96,8 @@ class NNLogicGUI:
         widget = self.master.focus_get()
         widget.tk.call('tk_textPaste', widget._w)
 
+    def openfile(self):
+        pass
 
 root = Tk()
 my_gui = NNLogicGUI(root)
