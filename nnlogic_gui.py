@@ -97,7 +97,15 @@ class NNLogicGUI:
         widget.tk.call('tk_textPaste', widget._w)
 
     def openfile(self):
-        pass
+        fname = askopenfilename(filetypes=(("Template files", "*.tplate"),
+                                           ("HTML files", "*.html;*.htm"),
+                                           ("All files", "*.*") ))
+        if fname:
+            try:
+                print("""here it comes: self.settings["template"].set(fname)""")
+            except:                     # <- naked except is a bad idea
+                showerror("Open Source File", "Failed to read file\n'%s'" % fname)
+            return
 
 root = Tk()
 my_gui = NNLogicGUI(root)
