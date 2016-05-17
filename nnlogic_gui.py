@@ -97,7 +97,7 @@ class NNLogicGUI:
         widget.tk.call('tk_textPaste', widget._w)
 
     def openfile(self):
-        fname = askopenfilename(filetypes=(("Template files", "*.tplate"),
+        fname = askopenfilename(filetypes=(("NNLogic Files (*.nnl, *.nnlogic)", "*.nnlogic"),
                                            ("HTML files", "*.html;*.htm"),
                                            ("All files", "*.*") ))
         if fname:
