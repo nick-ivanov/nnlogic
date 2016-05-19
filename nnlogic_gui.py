@@ -102,8 +102,8 @@ class NNLogicGUI:
                                            ("All files", "*.*") ))
         if fname:
             try:
-                print("""here it comes: self.settings["template"].set(fname)""")
-            except:                     # <- naked except is a bad idea
+                print("Filename: " + fname)
+            except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
 
