@@ -98,8 +98,7 @@ class NNLogicGUI:
 
     def openfile(self):
         fname = askopenfilename(filetypes=(("NNLogic Files (*.nnl, *.nnlogic)", "*.nnlogic"),
-                                           ("HTML files", "*.html;*.htm"),
-                                           ("All files", "*.*") ))
+                                           ("All files", "*.*")))
         if fname:
             try:
                 print("Filename: " + fname)
