@@ -102,6 +102,8 @@ class NNLogicGUI:
         if fname:
             try:
                 print("Filename: " + fname)
+                file = open(fname, "r")
+                print(file)
             except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
