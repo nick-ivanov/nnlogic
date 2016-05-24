@@ -103,7 +103,7 @@ class NNLogicGUI:
             try:
                 print("Filename: " + fname)
                 file = open(fname, "r")
-                print(file)
+                print(file.read())
             except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
