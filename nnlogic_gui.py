@@ -104,7 +104,9 @@ class NNLogicGUI:
                 print("Filename: " + fname)
                 file = open(fname, "r")
                 # print(file.read())
-                self.output_text = file.read()
+                self.clear_input()
+                self.input_text.insert(INSERT, file.read())
+
             except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
