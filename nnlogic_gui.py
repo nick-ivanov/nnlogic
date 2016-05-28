@@ -103,7 +103,6 @@ class NNLogicGUI:
             try:
                 print("Filename: " + fname)
                 file = open(fname, "r")
-                # print(file.read())
                 self.clear_input()
                 self.input_text.insert(INSERT, file.read())
 
