@@ -105,6 +105,7 @@ class NNLogicGUI:
                 file = open(fname, "r")
                 self.clear_input()
                 self.input_text.insert(INSERT, file.read())
+                file.close()
 
             except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
