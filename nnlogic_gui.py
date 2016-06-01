@@ -110,6 +110,9 @@ class NNLogicGUI:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
 
+    def savefile(self):
+        pass
+
 root = Tk()
 my_gui = NNLogicGUI(root)
 root.mainloop()
