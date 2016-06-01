@@ -97,7 +97,7 @@ class NNLogicGUI:
         widget.tk.call('tk_textPaste', widget._w)
 
     def openfile(self):
-        fname = askopenfilename(filetypes=(("NNLogic Files (*.nnl, *.nnlogic)", "*.nnlogic"),
+        fname = askopenfilename(filetypes=(("NNLogic Files (*.nnlogic)", "*.nnlogic"),
                                            ("All files", "*.*")))
         if fname:
             try:
@@ -106,7 +106,6 @@ class NNLogicGUI:
                 self.clear_input()
                 self.input_text.insert(INSERT, file.read())
                 file.close()
-
             except:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
