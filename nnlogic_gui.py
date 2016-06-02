@@ -31,7 +31,7 @@ class NNLogicGUI:
         self.filemenu = Menu(self.menubar, tearoff=0)
         self.filemenu.add_command(label="New", command=self.hello)
         self.filemenu.add_command(label="Open", command=self.openfile)
-        self.filemenu.add_command(label="Save", command=self.hello)
+        self.filemenu.add_command(label="Save", command=self.savefile)
         self.filemenu.add_separator()
         self.filemenu.add_command(label="Exit", command=self.master.quit)
         self.menubar.add_cascade(label="File", menu=self.filemenu)
