@@ -16,7 +16,7 @@
 
 from tkinter import *
 from tkinter.scrolledtext import *
-from tkinter.filedialog import askopenfilename
+from tkinter.filedialog import askopenfilename, asksaveasfile
 from tkinter.messagebox import showerror
 
 
@@ -111,7 +111,13 @@ class NNLogicGUI:
             return
 
     def savefile(self):
-        pass
+        f = asksaveasfile(mode='w', defaultextension=".txt")
+        if f is None:
+            return
+        text2save = str(self.input_text.get(1.0, END))
+        f.write(text2save)
+        f.close()
+
 
 root = Tk()
 my_gui = NNLogicGUI(root)
