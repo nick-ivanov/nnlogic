@@ -25,7 +25,7 @@ from nnlogic2 import go2
 class NNLogicGUI:
     def __init__(self, master):
         self.master = master
-        self.master.title("NNLogic GUI")
+        self.master.title("NNLogic")
 
         self.menubar = Menu(self.master)
         self.filemenu = Menu(self.menubar, tearoff=0)
