@@ -111,12 +111,12 @@ class NNLogicGUI:
             return
 
     def savefile(self):
-        f = asksaveasfile(mode='w', defaultextension=".txt")
-        if f is None:
+        file = asksaveasfile(mode='w', defaultextension=".nnlogic")
+        if file is None:
             return
         text2save = str(self.input_text.get(1.0, END))
-        f.write(text2save)
-        f.close()
+        file.write(text2save)
+        file.close()
 
 
 root = Tk()
