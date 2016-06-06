@@ -118,6 +118,8 @@ class NNLogicGUI:
         file.write(text2save)
         file.close()
 
+    def help(self):
+        pass
 
 root = Tk()
 my_gui = NNLogicGUI(root)
