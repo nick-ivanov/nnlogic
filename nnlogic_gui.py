@@ -114,8 +114,8 @@ class NNLogicGUI:
         file = asksaveasfile(mode='w', defaultextension=".nnlogic")
         if file is None:
             return
-        text2save = str(self.input_text.get(1.0, END))
-        file.write(text2save)
+        text = str(self.input_text.get(1.0, END))
+        file.write(text)
         file.close()
 
     def help(self):

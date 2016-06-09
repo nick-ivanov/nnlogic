@@ -16,4 +16,5 @@ NOTE: NNLogic is case insensitive
 No operand between variables is treated as AND (AB = A*B).
 Maximum number of variables is 8.
 EXAMPLE 1: (A^B)+'C+(AB)'+D
+
 =========================================================================
