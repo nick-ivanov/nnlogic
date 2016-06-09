@@ -119,7 +119,8 @@ class NNLogicGUI:
         file.close()
 
     def help(self):
-        pass
+        file = open("help.txt", "r")
+        print(file.read())
 
 root = Tk()
 my_gui = NNLogicGUI(root)
