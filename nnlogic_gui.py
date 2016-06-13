@@ -123,6 +123,7 @@ class NNLogicGUI:
         file = open("help.txt", "r")
         self.output_text.insert(INSERT, file.read())
 
+
 root = Tk()
 my_gui = NNLogicGUI(root)
 root.mainloop()
