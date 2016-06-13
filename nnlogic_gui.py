@@ -119,8 +119,9 @@ class NNLogicGUI:
         file.close()
 
     def help(self):
+        self.output_text.delete("1.0", END)
         file = open("help.txt", "r")
-        print(file.read())
+        self.output_text.insert(INSERT, file.read())
 
 root = Tk()
 my_gui = NNLogicGUI(root)
