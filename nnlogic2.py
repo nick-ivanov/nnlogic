@@ -23,7 +23,7 @@ def go2(q):
     """ Workhorse for GUI """
     ctx = Context()
     ret = ""
-    ret += welcome_message
+    #ret += welcome_message
 
     ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
