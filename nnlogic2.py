@@ -23,8 +23,6 @@ def go2(q):
     """ Workhorse for GUI """
     ctx = Context()
     ret = ""
-    #ret += welcome_message
-
     ctx.query = q
     ctx.query = ctx.query.replace(" ", "")
     ctx.query = ctx.query.replace("\n", "")
@@ -38,6 +36,7 @@ def go2(q):
             if i == j:
                 passflag = True
                 break
+
         if passflag == False:
             return "Error: character {} is not allowed.".format(i)
 
