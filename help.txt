@@ -7,14 +7,20 @@ https://www.gnu.org/licenses/gpl-3.0.html
 
 NNLogic creates a truth table for a logical expression.
 An expression can use parentheses and the following elements:
+
 1 - True; 0 - False;
+
 ' - NOT (used after an operand); * - AND; + - OR;
+
 ^ - XOR (exclusive OR); ^' - XNOR; *' - NAND; +' - NOR;
+
 A, B, C, ... Z - one-character variables
+
 NOTE: NNLogic is case insensitive
 
 No operand between variables is treated as AND (AB = A*B).
 Maximum number of variables is 8.
+
 EXAMPLE 1: (A^B)+'C+(AB)'+D
 
 =========================================================================
