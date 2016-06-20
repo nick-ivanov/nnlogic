@@ -28,6 +28,8 @@ def go2(q):
     ctx.query = ctx.query.replace("\n", "")
     ctx.query = ctx.query.upper()
 
+    ret += ("Truth table for: " + ctx.query + "\n")
+
     whitelist = ctx.alphabet + "01()*^+'"
 
     for i in ctx.query:
