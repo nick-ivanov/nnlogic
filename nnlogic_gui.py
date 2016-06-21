@@ -122,6 +122,9 @@ class NNLogicGUI:
         file = open("help.txt", "r")
         self.output_text.insert(INSERT, file.read())
 
+    def about(self):
+        pass
+
 
 root = Tk()
 my_gui = NNLogicGUI(root)
