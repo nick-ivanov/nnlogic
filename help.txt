@@ -1,12 +1,3 @@
-NNLogic v. 0.7 -- A simple logic expression processor
-
-Copyright (C) 2014-2016 Nick Ivanov
-Email: nnrowan@gmail.com
-
-Distributed under GNU General Public License v. 3
-The text of the license is in the license.txt file or online:
-https://www.gnu.org/licenses/gpl-3.0.html
-
 NNLogic creates a truth table for a logical expression.
 The expression can use parentheses and the following elements:
 
