@@ -123,8 +123,9 @@ class NNLogicGUI:
         self.output_text.insert(INSERT, file.read())
 
     def about(self):
-        pass
-
+        self.output_text.delete("1.0", END)
+        file = open("about.txt", "r")
+        self.output_text.insert(INSERT, file.read())
 
 root = Tk()
 my_gui = NNLogicGUI(root)
