@@ -45,7 +45,7 @@ class NNLogicGUI:
 
         self.helpmenu = Menu(self.menubar, tearoff=0)
         self.helpmenu.add_command(label="Quick Tutorial", command=self.help)
-        self.helpmenu.add_command(label="About...", command=self.hello)
+        self.helpmenu.add_command(label="About...", command=self.about)
         self.menubar.add_cascade(label="Help", menu=self.helpmenu)
 
         self.master.config(menu=self.menubar)
