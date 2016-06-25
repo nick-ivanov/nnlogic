@@ -67,9 +67,6 @@ class NNLogicGUI:
         s = self.input_text.get("1.0", END)
         self.output_text.insert(INSERT, go2(s))
 
-    def hello(self):
-        print("hello")
-
     def clear_input(self):
         self.input_text.delete("1.0", END)
 
