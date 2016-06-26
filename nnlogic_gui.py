@@ -18,7 +18,7 @@ from tkinter import *
 from tkinter.scrolledtext import *
 from tkinter.filedialog import askopenfilename, asksaveasfile
 from tkinter.messagebox import showerror
-
+from sys import platform
 
 from nnlogic2 import go2
 
@@ -27,6 +27,9 @@ class NNLogicGUI:
         self.master = master
         self.master.title("NNLogic")
 
+        if platform == 'darwin':
+            print("Darwin")
+            
         self.menubar = Menu(self.master)
         self.filemenu = Menu(self.menubar, tearoff=0)
         self.filemenu.add_command(label="Open", command=self.openfile)
