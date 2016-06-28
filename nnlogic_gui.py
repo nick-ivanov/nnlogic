@@ -27,10 +27,7 @@ class NNLogicGUI:
         self.master = master
         self.master.title("NNLogic")
 
-        if platform == 'darwin':
-            print("Darwin")
-
-        self.menubar = Menu(self.master, title="Okay")
+        self.menubar = Menu(self.master)
 
         self.filemenu = Menu(self.menubar, tearoff=0)
         self.filemenu.add_command(label="Open", command=self.openfile)
