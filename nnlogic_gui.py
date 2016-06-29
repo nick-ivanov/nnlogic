@@ -18,7 +18,6 @@ from tkinter import *
 from tkinter.scrolledtext import *
 from tkinter.filedialog import askopenfilename, asksaveasfile
 from tkinter.messagebox import showerror
-from sys import platform
 
 from nnlogic2 import go2
 
