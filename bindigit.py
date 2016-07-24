@@ -14,26 +14,14 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-class Context:
-    query = ""
-    variables = []
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+def bindigit(n, p, bits):
+    """ Returns binary digit of number n in position p """
+    cp = 0 	# Current position
+    real_p = bits - p - 1
+    while(cp < 27):		# Assume our number is less than 27 bits
+        if cp == real_p:
+            return n%2 	# Return remainder of division on 2 at current position
+        n = n // 2 		# Integer division
+        cp = cp + 1
 
-    def add_variable(self, v):
-        """ Add a unique variable to the list of variables """
-        if len(self.variables) == 8: return 1
-
-        for i in self.variables:
-            if i == v:
-                return 0
-        self.variables.append(v)
-        return 0
-
-    def get_variables(self):
-        """ Get the list of variables """
-        for i in self.query:
-            for j in self.alphabet:
-                if i == j:
-                    rc = self.add_variable(j)
-                    if rc != 0: return 1
-        return 0
+    return -1

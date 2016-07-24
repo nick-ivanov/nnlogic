@@ -14,26 +14,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-class Context:
-    query = ""
-    variables = []
-    alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-
-    def add_variable(self, v):
-        """ Add a unique variable to the list of variables """
-        if len(self.variables) == 8: return 1
-
-        for i in self.variables:
-            if i == v:
-                return 0
-        self.variables.append(v)
-        return 0
-
-    def get_variables(self):
-        """ Get the list of variables """
-        for i in self.query:
-            for j in self.alphabet:
-                if i == j:
-                    rc = self.add_variable(j)
-                    if rc != 0: return 1
-        return 0
+sub_table = [
+    ["(1)", "1"], ["(0)", "0"], ["1'", "0"], ["0'", "1"],  # Parenterses and NOT
+    ["1*1", "1"], ["0*1", "0"], ["1*0", "0"], ["0*0", "0"],  # AND
+    ["11", "1"], ["01", "0"], ["10", "0"], ["00", "0"],  # Reduced form of AND
+    ["1+1", "1"], ["0+1", "1"], ["1+0", "1"], ["0+0", "0"],  # OR
+    ["1^1", "0"], ["0^1", "1"], ["1^0", "1"], ["0^0", "0"],  # XOR
+    ["1^'1", "1"], ["0^'1", "0"], ["1^'0", "0"], ["0^'0", "1"],  # XNOR
+    ["1*'1", "0"], ["0*'1", "1"], ["1*'0", "1"], ["0*'0", "0"],  # NAND
+    ["1+'1", "0"], ["0+'1", "0"], ["1+'0", "0"], ["0+'0", "1"],  # NOR
+]
