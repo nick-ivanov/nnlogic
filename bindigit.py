@@ -1,5 +1,5 @@
 # NNLogic -- truth table creator for logic expressions
-# Copyright (C) 2014-2016 Nick Ivanov <nnrowan@gmail.com>
+# Copyright (C) 2014-2016 Nick Ivanov <nick@nnbits.org>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by

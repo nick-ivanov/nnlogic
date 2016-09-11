@@ -1,5 +1,5 @@
 # NNLogic -- truth table creator for logic expressions
-# Copyright (C) 2014-2016 Nick Ivanov <nnrowan@gmail.com>
+# Copyright (C) 2014-2016 Nick Ivanov <nick@nnbits.org>
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,7 +16,7 @@
 
 welcome_message = """Nickemu v. 0.3 -- A simple logic expression processor
 Copyright (C) 2014-2016 Nick Ivanov
-Email: nnrowan@gmail.com
+Email: nick@nnbits.org
 Distributed under GNU General Public License v. 3
 The text of the license is in license.txt file or online:
 https://www.gnu.org/licenses/gpl-3.0.html
