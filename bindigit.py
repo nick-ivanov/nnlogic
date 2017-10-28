@@ -19,9 +19,9 @@ def bindigit(n, p, bits):
     MAX_NUM_LENGTH = 54
     cp = 0 	# Current position
     real_p = bits - p - 1
-    while(cp < MAX_NUM_LENGTH):		# Assume our number is less than 27 bits
+    while cp < MAX_NUM_LENGTH:		# Assume our number is less than 27 bits
         if cp == real_p:
-            return n%2 	# Return remainder of division on 2 at current position
+            return n % 2 	# Return remainder of division on 2 at current position
         n = n // 2 		# Integer division
         cp = cp + 1
 

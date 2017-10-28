@@ -20,7 +20,7 @@ from bindigit import bindigit
 from welcome_message import welcome_message
 
 def go2(q):
-    """ Workhorse for GUI """
+    """ Executes query q in a GUI-interface-friendly way """
     ctx = Context()
     ret = ""
     ctx.query = q
