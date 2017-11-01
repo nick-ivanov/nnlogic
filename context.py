@@ -21,7 +21,8 @@ class Context:
 
     def add_variable(self, v):
         """ Add a unique variable to the list of variables """
-        if len(self.variables) == 8: return 1
+        if len(self.variables) == 8:
+            return 1
 
         for i in self.variables:
             if i == v:

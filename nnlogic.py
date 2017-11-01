@@ -35,12 +35,12 @@ def go():
             if i == j:
                 passflag = True
                 break
-        if passflag == False:
+        if not passflag:
             print("Error: character {} is not allowed.".format(i))
             return
 
     rc = ctx.get_variables()
-    if (rc != 0):
+    if rc != 0:
         print ("Error: Too many variables (maximum = 8)")
         return
 
@@ -63,7 +63,7 @@ def go():
             cnt = cnt+1
 
         cnt = 0
-        while (localquery != "1" and localquery != "0"):
+        while localquery != "1" and localquery != "0":
             for k in sub_table:
                 localquery = localquery.replace(k[0], k[1])
             if cnt == 100:
