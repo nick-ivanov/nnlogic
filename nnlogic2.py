@@ -19,6 +19,7 @@ from sub_table import sub_table
 from bindigit import bindigit
 from welcome_message import welcome_message
 
+
 def go2(q):
     """ Executes query q in a GUI-interface-friendly way """
     ctx = Context()
@@ -39,11 +40,11 @@ def go2(q):
                 passflag = True
                 break
 
-        if passflag == False:
+        if not passflag:
             return "Error: character {} is not allowed.".format(i)
 
     rc = ctx.get_variables()
-    if (rc != 0):
+    if rc != 0:
         return "Error: Too many variables (maximum = 8)"
 
     nvars = len(ctx.variables)
@@ -68,7 +69,7 @@ def go2(q):
             cnt = cnt + 1
 
         cnt = 0
-        while (localquery != "1" and localquery != "0"):
+        while localquery != "1" and localquery != "0":
             for k in sub_table:
                 localquery = localquery.replace(k[0], k[1])
             if cnt == 100:

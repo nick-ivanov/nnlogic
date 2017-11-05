@@ -67,7 +67,7 @@ def go():
             for k in sub_table:
                 localquery = localquery.replace(k[0], k[1])
             if cnt == 100:
-                print ("Error: Syntax error")
+                print("Error: Syntax error")
                 return
             cnt = cnt+1
 
