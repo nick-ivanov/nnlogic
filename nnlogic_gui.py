@@ -63,8 +63,8 @@ class NNLogicGUI:
         self.greet_button.pack()
 
     def process(self):
-        self.output_text.delete("1.0", END)
-        s = self.input_text.get("1.0", END)
+        self.output_text.delete("1.0", END)     # So stupid!
+        s = self.input_text.get("1.0", END)     # You know what I think... Right?
         self.output_text.insert(INSERT, go2(s))
 
     def clear_input(self):
@@ -123,6 +123,7 @@ class NNLogicGUI:
         self.output_text.delete("1.0", END)
         file = open("about.txt", "r")
         self.output_text.insert(INSERT, file.read())
+
 
 root = Tk()
 my_gui = NNLogicGUI(root)
