@@ -102,7 +102,7 @@ class NNLogicGUI:
                 self.clear_input()
                 self.input_text.insert(INSERT, file.read())
                 file.close()
-            except:
+            except IOError:
                 showerror("Open Source File", "Failed to read file\n'%s'" % fname)
             return
 
