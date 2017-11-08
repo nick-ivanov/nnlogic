@@ -1,3 +1,15 @@
+```
+ _   _  _   _  _                    _
+| \ | || \ | || |                  (_)
+|  \| ||  \| || |      ___    __ _  _   ___
+| . ` || . ` || |     / _ \  / _` || | / __|
+| |\  || |\  || |____| (_) || (_| || || (__
+\_| \_/\_| \_/\_____/ \___/  \__, ||_| \___|
+                              __/ |
+                             |___/
+Creative approach to logic expression parsing
+```
+
 # NNLogic
 NNLogic is logic expression parser and truth table builder that uses non-traditional (and more efficient!) way of parsing.
 
